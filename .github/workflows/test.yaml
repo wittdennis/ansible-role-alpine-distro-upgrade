@@ -1,0 +1,7 @@
+name: test
+
+on: [pull_request]
+
+jobs:
+  test:
+    uses: wittdennis/pipelines/.github/workflows/ansible-test.yaml@1.12.10
