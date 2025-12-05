@@ -2,9 +2,17 @@ name: create-release
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        default: "auto"
+        required: false
+        description: "Used to manually set the version"
 
 jobs:
   release:
-    uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@1.12.10
+    uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@1.13.0
+    with:
+      version: ${{ inputs.version }}
     secrets:
       release-token: ${{ secrets.RELEASE_TOKEN}}
