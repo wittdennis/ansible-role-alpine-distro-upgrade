@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [1.0.1](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/compare/ac030f87a5937ef90d9a1a4f78987c5c74a2a922..1.0.1) - 2025-12-05
+#### Bug Fixes
+- ansible galaxy dependency issue - ([ac030f8](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/ac030f87a5937ef90d9a1a4f78987c5c74a2a922)) - Dennis Witt
+
+- - -
+
 ## [1.0.0](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/compare/10e9223f8b7534bcd7128df7634132bbec9cec7c..1.0.0) - 2025-12-05
 #### Features
 - initial implementation - ([a8ef8fb](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/a8ef8fb17d945c3e5b2c58becbbc683dd0f17ec7)) - Dennis Witt
