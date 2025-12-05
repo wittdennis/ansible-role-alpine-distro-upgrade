@@ -1,2 +1,10 @@
+# code: language=ansible
 ---
-# handlers file for role_remplate
+- name: Sync services # noqa: no-changed-when
+  become: true
+  ansible.builtin.command:
+    cmd: sync
+
+- name: Reboot system
+  become: true
+  ansible.builtin.reboot:

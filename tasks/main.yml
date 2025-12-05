@@ -1,2 +1,17 @@
+# code: language=ansible
 ---
-# tasks file for role_remplate
+- name: Check if Alpine Linux
+  ansible.builtin.assert:
+    that:
+      - ansible_facts["distribution"] == "Alpine"
+    fail_msg: "This role only works on Alpine systems"
+
+- name: Check current distro version
+  ansible.builtin.set_fact:
+    alpine_distro_version_current: "{{ ansible_facts['distribution_version'].split('.')[:2] | join('.') }}"
+    alpine_distro_version_desired: "{{ (alpine_distro_upgrade_version | regex_replace('^v', '')).split('.')[:2] | join('.') }}"
+
+- name: Do upgrade
+  when: alpine_distro_version_current != alpine_distro_version_desired
+  ansible.builtin.include_tasks:
+    file: upgrade.yml

@@ -1,2 +1,2 @@
 ---
-# defaults file for role_remplate
+alpine_distro_upgrade_version: v3.23.0

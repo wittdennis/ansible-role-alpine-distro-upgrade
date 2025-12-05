@@ -1,0 +1,27 @@
+# code: language=ansible
+---
+- name: Update repositories file
+  become: true
+  ansible.builtin.replace:
+    regexp: v\d+\.\d+
+    path: /etc/apk/repositories
+    replace: "v{{ alpine_distro_version_desired }}"
+
+- name: Update apk-tools
+  become: true
+  community.general.apk:
+    update_cache: true
+    name:
+      - apk-tools
+    state: latest
+
+- name: Update installed packages
+  become: true
+  register: alpine_package_upgrade
+  notify:
+    - Sync services
+    - Reboot system
+  community.general.apk:
+    update_cache: true
+    upgrade: true
+    available: true
