@@ -18,5 +18,4 @@ galaxy_info:
     - alpine
     - upgrade
 
-dependencies:
-  - role: community.general.apk
+dependencies: []
