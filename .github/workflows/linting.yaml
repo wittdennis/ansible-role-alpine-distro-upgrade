@@ -5,6 +5,6 @@ on:
 
 jobs:
   ansible-lint:
-    uses: wittdennis/pipelines/.github/workflows/ansible-lint.yaml@1.13.10
+    uses: wittdennis/pipelines/.github/workflows/ansible-lint.yaml@1.13.11
     with:
       requirements-file: requirements.yml
