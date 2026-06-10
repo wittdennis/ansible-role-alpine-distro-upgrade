@@ -1,2 +1,2 @@
 ---
-alpine_distro_upgrade_version: "3.23" # renovate: datasource=docker depName=alpine versioning=docker
+alpine_distro_upgrade_version: "3.24" # renovate: datasource=docker depName=alpine versioning=docker
