@@ -18,10 +18,18 @@
 - name: Update installed packages
   become: true
   register: alpine_package_upgrade
-  notify:
-    - Sync services
-    - Reboot system
   community.general.apk:
     update_cache: true
     upgrade: true
     available: true
+
+- name: Sync services # noqa: no-changed-when no-handler
+  become: true
+  when: alpine_package_upgrade.changed
+  ansible.builtin.command:
+    cmd: sync
+
+- name: Reboot system # noqa: no-handler
+  become: true
+  when: alpine_package_upgrade.changed
+  ansible.builtin.reboot:
