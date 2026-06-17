@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [1.0.3](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/compare/9228c09d2293f53fe927a78f5bd02c1bae1d0888..1.0.3) - 2026-06-17
+#### Bug Fixes
+- switch reboot from handler to normal step to avoid no reboot on playbook failure - ([a72da73](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/a72da73b2315397c953babcceade458f40c4c3cb)) - Dennis Witt
+#### Miscellaneous Chores
+- (**deps**) update dependency community.general to v13.1.0 - ([9228c09](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/9228c09d2293f53fe927a78f5bd02c1bae1d0888)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.0.2](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/compare/02a6dbc953e32210829bb320efb239f88cc29906..1.0.2) - 2026-06-10
 #### Bug Fixes
 - (**deps**) update alpine docker tag to v3.24 - ([6d37253](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/6d372538780ec266ee6d544574294249e68460e9)) - wittdennis-renovate[bot]
