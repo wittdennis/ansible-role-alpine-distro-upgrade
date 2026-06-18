@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [1.0.4](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/compare/efbf7c8574c6eefbde407376db88461572f86f10..1.0.4) - 2026-06-18
+#### Bug Fixes
+- use raw module for sync and reboot to handle pyhton upgrades - ([efbf7c8](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/efbf7c8574c6eefbde407376db88461572f86f10)) - Dennis Witt
+
+- - -
+
 ## [1.0.3](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/compare/9228c09d2293f53fe927a78f5bd02c1bae1d0888..1.0.3) - 2026-06-17
 #### Bug Fixes
 - switch reboot from handler to normal step to avoid no reboot on playbook failure - ([a72da73](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/a72da73b2315397c953babcceade458f40c4c3cb)) - Dennis Witt
