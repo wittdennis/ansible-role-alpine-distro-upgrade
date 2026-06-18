@@ -23,13 +23,15 @@
     upgrade: true
     available: true
 
-- name: Sync services # noqa: no-changed-when no-handler
+- name: Sync and reboot # noqa: no-changed-when no-handler
   become: true
   when: alpine_package_upgrade.changed
-  ansible.builtin.command:
-    cmd: sync
+  ansible.builtin.raw: sync && reboot
+  async: 1
+  poll: 0
 
-- name: Reboot system # noqa: no-handler
-  become: true
+- name: Wait for system to come back online # noqa: no-handler
   when: alpine_package_upgrade.changed
-  ansible.builtin.reboot:
+  ansible.builtin.wait_for_connection:
+    delay: 15
+    timeout: 300
