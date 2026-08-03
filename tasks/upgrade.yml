@@ -26,9 +26,9 @@
 - name: Sync and reboot # noqa: no-changed-when no-handler
   become: true
   when: alpine_package_upgrade.changed
-  ansible.builtin.raw: sync && reboot
-  async: 1
-  poll: 0
+  # raw (not the reboot module) so this survives a distro upgrade replacing Python.
+  # Backgrounded so the command returns before the connection drops (raw has no async).
+  ansible.builtin.raw: sync && (sleep 2 && reboot) &
 
 - name: Wait for system to come back online # noqa: no-handler
   when: alpine_package_upgrade.changed
