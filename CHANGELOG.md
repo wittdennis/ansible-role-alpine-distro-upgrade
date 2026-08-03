@@ -2,6 +2,32 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [1.0.5](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/compare/8a7d60811f731456ca3e84df46b72454c3e717e8..1.0.5) - 2026-08-03
+#### Bug Fixes
+- remove async from raw task - ([decb89b](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/decb89b0ba166deb4617715031b13f050224ea68)) - Dennis Witt
+#### Continuous Integration
+- (**deps**) update wittdennis/pipelines action to v2.0.42 - ([6cae582](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/6cae5826b8ac6df83ce585969f4cf0b09e7519d7)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.41 - ([a8592e5](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/a8592e50ae2301703ca2b28cb4af7045ced4dce9)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.40 - ([837f026](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/837f026eb11952abb38e3e5143ec043033379ddb)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.39 - ([bb252eb](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/bb252eb65342219408094a413a988498acb33748)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.38 - ([3d27aee](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/3d27aee9a6a9f753b689f63ff63ccb81c23da257)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.37 - ([f1db06c](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/f1db06c3185b2e33fe182f727b0d4f4ce78e1548)) - wittdennis-renovate[bot]
+#### Miscellaneous Chores
+- (**deps**) update dependency community.general to v13.2.0 - ([b830452](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/b830452005b30af430d67c84f9eb81f64f39e9b7)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.36 - ([c0ad749](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/c0ad7496675b7fc6f0096e592790aa46376ce73f)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.35 - ([19e42e0](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/19e42e04b9748435eefe44a589a9ac2668d19f0f)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.34 - ([d356f14](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/d356f14d1fb2000b55557f35800e77bbbc7f4c00)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.33 - ([60081ed](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/60081ed4a0d41381c2890e6ffae0ffd182a49556)) - wittdennis-renovate[bot]
+- (**deps**) update pre-commit hook ansible-community/ansible-lint to v26.6.0 - ([3e6bc3f](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/3e6bc3f0c8a970393afc8c1d8d9c1281f4bd4281)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.32 - ([11326cd](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/11326cd35493c29ee1af7de215099316f8c85ec5)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.31 - ([35f92db](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/35f92db58520faea10e6ac4660a84294f022d975)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.29 - ([732c73e](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/732c73e3925a1761e1bd187f95ddca3d91582af7)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.28 - ([a1f18a0](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/a1f18a09f383a586092d2b692a9bfa521814cffd)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.26 - ([e8478fb](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/e8478fbd3e719615cba345bd29995901067d2432)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.25 - ([8a7d608](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/8a7d60811f731456ca3e84df46b72454c3e717e8)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.0.4](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/compare/efbf7c8574c6eefbde407376db88461572f86f10..1.0.4) - 2026-06-18
 #### Bug Fixes
 - use raw module for sync and reboot to handle pyhton upgrades - ([efbf7c8](https://github.com/wittdennis/ansible-role-alpine-distro-upgrade/commit/efbf7c8574c6eefbde407376db88461572f86f10)) - Dennis Witt
