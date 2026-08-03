@@ -26,9 +26,11 @@
 - name: Sync and reboot # noqa: no-changed-when no-handler
   become: true
   when: alpine_package_upgrade.changed
-  # raw (not the reboot module) so this survives a distro upgrade replacing Python.
-  # Backgrounded so the command returns before the connection drops (raw has no async).
-  ansible.builtin.raw: sync && (sleep 2 && reboot) &
+  # raw (not the reboot module) because Alpine/busybox ships no `shutdown` command.
+  # reboot runs in the foreground so it definitely executes; it tears down sshd,
+  # so tolerate the unreachable result and let wait_for_connection reconnect.
+  ansible.builtin.raw: sync && reboot
+  ignore_unreachable: true
 
 - name: Wait for system to come back online # noqa: no-handler
   when: alpine_package_upgrade.changed
